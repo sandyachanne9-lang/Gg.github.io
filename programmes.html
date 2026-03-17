@@ -48,20 +48,24 @@
         a:hover{
             color: #ff3c00;
         }
-        .sa{
-            padding: 20px;
-            background: linear-gradient(black);
-            background-size: cover;
-            background-position: center;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+           .programmes{
+            padding: 60px 20px;
             text-align: center;
         }
-      </style>
-       <meta charset="UTF-8">
+        .cards{
+            display: grid;
+            grid-template-colums: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card{
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        </style>
+        <meta charset="UTF-8">
     <title>Nos site Fitness Park</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -80,9 +84,28 @@
            <a href="coach.html">Coach</a>
            <a href="contact.html">Contact</a>
        </nav>
-       <section id="a propos" class="sa">
-           <h3>Bienvenue dans nos site Fitness Park☺️☺️</h3>
-           <h4>Dans nos site on trois développeurs<br>
-           ✓RANDIMBISOA Jyliana<br>
-           ✓RAZANAJAONA Vololonirina Bienvenue Sandra<br>
-           ✓RASOAMAHEFAMANANA Vololontsoa Fanantenana<br>
+      
+        <section id="programmes" class="programmes">
+           <h2>Nos programmes chez Fitness Park</h2>
+           <div class="card">
+             <h3>Cardio débutant😲😲</h3> 
+              <p>Brillez les graisses et améliorer votre endurance.</p>
+              <h3>Musculation 💪🦵</h3>
+              <p>Développez votre force et votre masse musculaire.</p>
+              <h3>Fitness💪👌</h3>
+              <p>Tonifiez votre corps et rester en forme.</p>
+           </div>
+           <h2>Heures et jour d'ouverture📅⏲️</h2>
+           <ul>
+               <div class="grid">
+                   <div class="item"><li>Lundi: 8h à 12h:00(matin) et 14h à 17h:00(après midi)⏲️</li></div>
+                   <div class="item"><li>Mardi: 8h jusqu'à au soir 18h⏲️</li></div>
+                   <div class="item"><li>Mercredi, jeudi et vendredi: seulement le matin qu'on s'ouvre⏲️</li></div>
+                   <div class="item"><li>Samedi: on ouverte pendant toute la journée ⏲️</li></div>
+                   <div class="item"><li>Dimanche: seulement le soir qu'on est ouvert⏲️</li></div>
+               </div>
+           </ul>
+       </section>
+   </body>
+</html>
+   

@@ -1,24 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header{
+            background:#111;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container{
+            display: grid;
+            grid-template-colums:repeat(3 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .item{
+            background-color: transparent;
+            padding: 20px;
+            border-style: outset;
+        }
+        .button{
+            border-radius: 2em;
+        }
+        img{
+            height: 100px;
+            width: 80px;
+        }
+        a{
+            color: blue;
+            margin-left: 5px;
+        }
+        
+         a{
+            color: blue;
+            margin-left: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #ff3c00;
+        }
+             .coach{
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("forme.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        </style>
     <meta charset="UTF-8">
-       <title>Titre de la page</title>
+    <title>Nos site Fitness Park</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+       <div class="container">
+           <div class="item"><button><img src="logo.jpg" alt="description"></button></div>
+       </div>
+       <marquee><h1>Bienvenue dans nos site Fitness Park👋👋</h1></marquee>
+    </header>
     <nav>
-        <a href="a propos.html">A propos</a>
-        <a href="acceuil.html">Acceuil</a>
-        <a href="programmes.html">Programmes</a>
-        <a href="conseils.html">Conseils</a>
-        <a href="coach.html">Coach</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-       <section id="coach" class="coach">
-        <h2>Votre coach mes cher(e)s clients🏋️😊 </h2>
-        <p>Coach cértifié avec 10 ans d'expérience👌👌</p>
-    </section> 
-</body>
-</html>
+           <a href="a propos.html">Accueil</a>
+           <a href="accueil.html">A propos</a>
+           <a href="programmes.html">Programmes</a>
+           <a href="conseils.html">Conseils</a>
+           <a href="coach.html">Coach</a>
+           <a href="contact.html">Contact</a>
+       </nav>
+       <section id="a propos" class="sa">
+           <h3>Bienvenue dans nos site Fitness Park☺️☺️</h3>
+   <section id="coach" class="coach">
+           <h2>Notre coach mes cher(e)s client(e)s </h2>
+           <p>Est coach certifié avec 10 ans d'expérience en fitness👌🤔</p>
+       </section>
+   </body>  
+</html>       
